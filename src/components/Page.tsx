@@ -8,11 +8,11 @@ export const Page: React.FC<RouteComponentProps<{ path?: string }>> = ({
 }) => {
   const { path } = match.params
   const LoadedContent = getPage(path ? `${path}.mdx` : 'index.mdx', () => () =>
-    "Can't find index page"
+    `Can't find page for ${path}`
   )
 
   return (
-    <React.Suspense fallback={'Loading content'}>
+    <React.Suspense fallback={''}>
       <LoadedContent />
     </React.Suspense>
   )
