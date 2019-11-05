@@ -4,7 +4,7 @@ import { Route } from 'react-router'
 import { Content } from './Content'
 import { Layout } from './Layout'
 import { Page } from './Page'
-import { Primary } from './Primary'
+import { Main } from './Main'
 import { Sidebar } from './Sidebar'
 import { Shell } from './Shell'
 
@@ -14,9 +14,9 @@ export const App: React.FC = () => (
       <Sidebar>
         <Content path="sidebar" />
       </Sidebar>
-      <Primary>
+      <Main>
         <Route path="/:path*" component={Page} />
-      </Primary>
+      </Main>
     </Layout>
   </Shell>
 )

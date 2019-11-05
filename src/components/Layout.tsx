@@ -6,7 +6,7 @@ export const Layout = styled.main`
   width: 100vw;
 
   display: grid;
-  grid-template: 'sidebar primary' / 1fr 3fr;
+  grid-template: 'sidebar main' / 1fr 3fr;
 
   a {
     color: ${props => props.theme.colors.accent.six};

@@ -1,11 +1,12 @@
 import styled from 'styled-components'
 
-export const Primary = styled.section`
-  grid-area: primary;
+export const Main = styled.section`
+  grid-area: main;
 
   background: ${props => props.theme.colors.neutral.two};
   color: ${props => props.theme.colors.neutral.eleven};
   padding: ${props => props.theme.padding.twelve};
+  padding-top: ${props => props.theme.padding.eleven};
   overflow: auto;
 
   h1 {

@@ -14,7 +14,16 @@
     "resolveJsonModule": true,
     "isolatedModules": true,
     "noEmit": true,
-    "jsx": "react"
+    "jsx": "react",
+    "plugins": [
+      {
+        "name": "typescript-styled-plugin",
+        "lint": {
+          // "vendorPrefix": "error",
+          // "zeroUnits": "ignore"
+        }
+      }
+    ]
   },
   "include": ["src"]
 }

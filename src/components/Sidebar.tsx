@@ -5,8 +5,12 @@ export const Sidebar = styled.aside`
 
   background: ${props => props.theme.colors.neutral.ten};
   color: ${props => props.theme.colors.neutral.two};
-  padding: ${props => props.theme.padding.eleven}
-    ${props => props.theme.padding.nine};
+
+  padding-top: ${props => props.theme.padding.eleven};
+  padding-bottom: ${props => props.theme.padding.eleven};
+  padding-left: ${props => props.theme.padding.nine};
+  padding-right: ${props => props.theme.padding.nine};
+
   overflow: auto;
 
   a {
